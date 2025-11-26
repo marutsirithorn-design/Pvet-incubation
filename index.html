@@ -140,7 +140,7 @@
                 <div class="md:w-1/2 flex justify-center">
                     <!-- Placeholder for Cartoon Image -->
                     <div class="w-80 h-80 bg-white rounded-full border-8 border-brand-200 flex items-center justify-center shadow-xl overflow-hidden relative">
-                         <img src="https://placehold.co/400x400/f3e8ff/9333ea?text=Cartoon+Entrepreneur" alt="Cartoon Entrepreneur" class="object-cover w-full h-full opacity-90 hover:opacity-100 transition">
+                         <img src="https://i.postimg.cc/kGYrJH6f/incu-1.png" alt="Cartoon Entrepreneur" class="object-cover w-full h-full opacity-90 hover:opacity-100 transition">
                          <div class="absolute bottom-4 bg-white/80 px-4 py-1 rounded-full text-xs font-bold text-brand-600">StartUp Idea!</div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
             
-            <!-- 1.1 News (Same as before) -->
+            <!-- 1.1 News -->
             <section>
                 <div class="flex items-center mb-6">
                     <div class="bg-brand-100 p-3 rounded-full mr-4"><i class="fa-solid fa-bullhorn text-brand-600 text-xl"></i></div>
@@ -158,7 +158,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="cartoon-card bg-white rounded-xl shadow-md overflow-hidden border border-brand-50">
                         <div class="h-40 bg-brand-50 flex items-center justify-center text-brand-300">
-                            <i class="fa-regular fa-image text-4xl"></i>
+                            <i class="fa-solid fa-newspaper text-4xl"></i>
                         </div>
                         <div class="p-5">
                             <span class="text-xs font-bold text-brand-500 bg-brand-50 px-2 py-1 rounded">Update</span>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="cartoon-card bg-white rounded-xl shadow-md overflow-hidden border border-brand-50">
                         <div class="h-40 bg-brand-50 flex items-center justify-center text-brand-300">
-                            <i class="fa-regular fa-image text-4xl"></i>
+                            <i class="fa-solid fa-file text-4xl"></i>
                         </div>
                         <div class="p-5">
                             <span class="text-xs font-bold text-green-500 bg-green-50 px-2 py-1 rounded">Activity</span>
@@ -178,7 +178,7 @@
                     </div>
                     <div class="cartoon-card bg-white rounded-xl shadow-md overflow-hidden border border-brand-50">
                         <div class="h-40 bg-brand-50 flex items-center justify-center text-brand-300">
-                            <i class="fa-regular fa-image text-4xl"></i>
+                            <i class="fa-solid fa-trophy text-4xl"></i>
                         </div>
                         <div class="p-5">
                             <span class="text-xs font-bold text-blue-500 bg-blue-50 px-2 py-1 rounded">Result</span>
@@ -189,33 +189,48 @@
                 </div>
             </section>
 
-            <!-- 1.2 Calendar (From Google Sheet) -->
+            <!-- 1.2 Calendar (EDIT HERE) -->
             <section class="bg-white p-6 rounded-2xl shadow-sm border border-brand-100">
                 <div class="flex items-center mb-6">
                     <div class="bg-brand-100 p-3 rounded-full mr-4"><i class="fa-regular fa-calendar-check text-brand-600 text-xl"></i></div>
                     <h3 class="text-2xl font-bold text-slate-800">ปฏิทินดำเนินการ</h3>
                 </div>
-                <!-- Embed Placeholder -->
-                <div class="w-full h-96 embed-placeholder rounded-xl">
-                    <span class="embed-label">Google Sheet (Calendar View)</span>
-                    <i class="fa-solid fa-table-list text-5xl text-green-400 mb-3"></i>
-                    <p class="font-bold">พื้นที่แสดงปฏิทินจาก Google Sheets</p>
-                    <p class="text-sm mt-2">ข้อมูลจะถูกดึงมาจากไฟล์ Sheet ที่คุณกำหนดโดยอัตโนมัติ</p>
+                <!-- Embed Area -->
+                <div class="w-full h-96 bg-white rounded-xl border border-slate-200 overflow-hidden shadow-inner relative">
+                    
+                    <!-- [จุดแก้ไขที่ 1] : แทนที่ลิงก์ใน src ด้วยลิงก์ Google Sheet Calendar ของคุณ -->
+                    <iframe 
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIT1hDJBJd3kgl1bQvt_gYxnrTeHSgJFeFknlhGuVWINEuNcS67WO7aan0f-QmaSLFMVI1iHoJxdmy/pubhtml?gid=880101441&amp;single=true&amp;widget=true&amp;headers=false" 
+                        class="w-full h-full border-0"
+                        title="Google Sheet Calendar">
+                    </iframe>
+                    
+                    <div class="absolute inset-0 -z-10 flex items-center justify-center text-slate-400">
+                        <p>กำลังโหลดปฏิทิน... (หากไม่แสดง กรุณาใส่ลิงก์ให้ถูกต้อง)</p>
+                    </div>
                 </div>
             </section>
 
-            <!-- 1.3 Evaluation Results (From Google Sheet) -->
+            <!-- 1.3 Evaluation Results (EDIT HERE) -->
             <section>
                 <div class="flex items-center mb-6">
                     <div class="bg-brand-100 p-3 rounded-full mr-4"><i class="fa-solid fa-chart-pie text-brand-600 text-xl"></i></div>
                     <h3 class="text-2xl font-bold text-slate-800">ผลการประเมินล่าสุด</h3>
                 </div>
-                <!-- Embed Placeholder -->
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg border border-brand-100 h-[500px] embed-placeholder">
-                    <span class="embed-label">Google Sheet / Looker Studio</span>
-                    <i class="fa-solid fa-chart-simple text-5xl text-brand-400 mb-3"></i>
-                    <p class="font-bold">พื้นที่แสดงตารางผลการประเมินจาก Google Sheets</p>
-                    <p class="text-sm mt-2">เมื่อมีการอัปเดตคะแนนใน Sheet ผลลัพธ์จะแสดงที่นี่แบบ Real-time</p>
+                <!-- Embed Area for Results -->
+                <div class="w-full h-[500px] bg-white rounded-xl border border-brand-100 overflow-hidden shadow-sm relative">
+                    
+                    <!-- [จุดแก้ไขที่ 2] : แทนที่ลิงก์ใน src ด้วยลิงก์ Google Sheet / Looker Studio ที่เผยแพร่แล้ว -->
+                    <iframe 
+                        src="ใส่ลิงก์_GOOGLE_SHEET_หรือ_LOOKER_STUDIO_ผลการประเมิน_ที่นี่" 
+                        class="w-full h-full border-0"
+                        title="Evaluation Results">
+                    </iframe>
+
+                     <div class="absolute inset-0 -z-10 flex flex-col items-center justify-center text-slate-400">
+                         <i class="fa-solid fa-chart-simple text-5xl mb-3 opacity-20"></i>
+                         <p>พื้นที่แสดงผลการประเมิน (กรุณาใส่ลิงก์ Embed)</p>
+                     </div>
                 </div>
             </section>
         </div>
@@ -234,17 +249,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-4 gap-8">
             <!-- Sidebar / PR Section -->
             <div class="lg:col-span-1 space-y-6">
-                <!-- 2.1 PR (Same) -->
+                <!-- 2.1 PR -->
                 <div class="bg-white p-5 rounded-xl shadow-sm border border-brand-100">
                     <h3 class="font-bold text-lg text-slate-800 mb-4 border-l-4 border-brand-500 pl-3">ประชาสัมพันธ์</h3>
                     <div class="space-y-4">
                         <div class="text-sm border-b pb-2">
                             <p class="font-medium text-slate-700">คู่มือการใช้งานระบบ v.2</p>
-                            <a href="#" class="text-brand-500 hover:underline text-xs"><i class="fa-solid fa-download"></i> ดาวน์โหลด PDF</a>
+                            
+                            <!-- [จุดแก้ไขที่ 3] : ลิงก์ดาวน์โหลดคู่มือ -->
+                            <a href="ใส่ลิงก์_ไฟล์คู่มือ_PDF_ที่นี่" class="text-brand-500 hover:underline text-xs"><i class="fa-solid fa-download"></i> ดาวน์โหลด PDF</a>
+                        
                         </div>
                         <div class="text-sm border-b pb-2">
                             <p class="font-medium text-slate-700">เกณฑ์การให้คะแนนปี 67</p>
-                            <a href="#" class="text-brand-500 hover:underline text-xs"><i class="fa-solid fa-download"></i> ดาวน์โหลด PDF</a>
+                            
+                            <!-- [จุดแก้ไขที่ 4] : ลิงก์ดาวน์โหลดเกณฑ์ -->
+                            <a href="ใส่ลิงก์_ไฟล์เกณฑ์_PDF_ที่นี่" class="text-brand-500 hover:underline text-xs"><i class="fa-solid fa-download"></i> ดาวน์โหลด PDF</a>
+                        
                         </div>
                     </div>
                 </div>
@@ -259,38 +280,39 @@
             <!-- Main Content Area -->
             <div class="lg:col-span-3 space-y-8">
                 
-                <!-- 2.2 Data Entry (Link Embed) -->
+                <!-- 2.2 Data Entry (EDIT HERE) -->
                 <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
                     <div class="flex items-center justify-between mb-6">
                          <h3 class="text-xl font-bold text-slate-800"><i class="fa-solid fa-pen-to-square text-brand-500 mr-2"></i> บันทึกข้อมูลการประเมิน</h3>
                          <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-bold">เปิดระบบ</span>
                     </div>
                    
-                    <!-- Embed Placeholder for Link -->
-                    <div class="w-full h-[600px] embed-placeholder rounded-lg bg-slate-50">
-                        <span class="embed-label">External Link / Google Form Embed</span>
+                    <div class="w-full h-64 embed-placeholder rounded-lg bg-slate-50 flex flex-col items-center justify-center p-8">
                         <img src="https://www.gstatic.com/images/branding/product/1x/forms_2020q4_48dp.png" alt="Google Forms" class="w-16 h-16 mb-3 opacity-50">
-                        <h4 class="font-bold text-slate-600 text-lg">พื้นที่แสดงฟอร์มบันทึกข้อมูล</h4>
-                        <p class="text-slate-400 text-sm mb-4">ดึงข้อมูลมาจากลิงก์ที่คุณกำหนด (เช่น Google Forms)</p>
-                        <a href="#" class="bg-brand-600 text-white px-4 py-2 rounded hover:bg-brand-700 transition shadow">
-                            <i class="fa-solid fa-external-link-alt mr-1"></i> เปิดลิงก์ฟอร์มกรอกข้อมูล
+                        <h4 class="font-bold text-slate-600 text-lg">แบบฟอร์มบันทึกข้อมูล</h4>
+                        <p class="text-slate-400 text-sm mb-4 text-center">กรุณากดปุ่มด้านล่างเพื่อเข้าสู่หน้าบันทึกข้อมูลสถานศึกษา</p>
+                        
+                        <!-- [จุดแก้ไขที่ 5] : ลิงก์ Google Form สำหรับกรอกข้อมูล -->
+                        <a href="https://script.google.com/macros/s/AKfycbyjOpmYG3pCwc23H13XRtSaODwYMlBEDwkUMRX_nc-bOm0N6cDTgd8hCWTkciKbEngUfw/exec" target="_blank" class="bg-brand-600 text-white px-6 py-3 rounded-lg hover:bg-brand-700 transition shadow-lg flex items-center">
+                            <i class="fa-solid fa-external-link-alt mr-2"></i> เปิดฟอร์มบันทึกข้อมูล
                         </a>
+                        
                     </div>
                 </section>
 
-                <!-- 2.3 Check Scores (Link Embed) -->
+                <!-- 2.3 Check Scores (EDIT HERE) -->
                 <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
                      <h3 class="text-xl font-bold text-slate-800 mb-6"><i class="fa-solid fa-clipboard-check text-brand-500 mr-2"></i> ตรวจสอบผลคะแนน</h3>
                      
-                     <!-- Embed Placeholder for Score Link -->
-                     <div class="w-full h-[500px] embed-placeholder rounded-lg bg-blue-50/30 border-blue-200 border-dashed">
-                        <span class="embed-label">Score Dashboard Link</span>
-                        <i class="fa-solid fa-square-poll-vertical text-5xl text-blue-400 mb-3"></i>
-                        <h4 class="font-bold text-slate-600 text-lg">พื้นที่แสดงผลคะแนน</h4>
-                        <p class="text-slate-400 text-sm mb-4">ดึงข้อมูลมาจากลิงก์ตรวจสอบผลคะแนน (เช่น Looker Studio)</p>
-                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition shadow">
-                            <i class="fa-solid fa-external-link-alt mr-1"></i> ไปยังหน้าตรวจสอบผล
+                     <div class="w-full h-48 embed-placeholder rounded-lg bg-blue-50/30 border-blue-200 border-dashed flex flex-col items-center justify-center">
+                        <i class="fa-solid fa-square-poll-vertical text-4xl text-blue-400 mb-3"></i>
+                        <p class="text-slate-500 text-sm mb-4">ตรวจสอบสถานะและคะแนนการประเมิน</p>
+                        
+                        <!-- [จุดแก้ไขที่ 6] : ลิงก์หน้า Dashboard หรือ Google Sheet คะแนน -->
+                        <a href="https://script.google.com/macros/s/AKfycbz475nVjFn3e6zJlqrOsv5IHpQhDEOmrtveou2-tSQS_3fmuEzBiTUXFJwJudOfpvGu/exec" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition shadow">
+                            <i class="fa-solid fa-chart-line mr-1"></i> ไปยังหน้าตรวจสอบผล
                         </a>
+                        
                      </div>
                 </section>
             </div>
@@ -308,7 +330,7 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <!-- 3.1 PR for Committee (Same) -->
+            <!-- 3.1 PR for Committee -->
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
                 <div class="flex">
                     <div class="flex-shrink-0">
@@ -326,23 +348,26 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- 3.2 Document Check (Link Embed) -->
+                <!-- 3.2 Document Check (EDIT HERE) -->
                 <div class="lg:col-span-1">
                     <div class="bg-white rounded-xl shadow-md overflow-hidden h-full">
                         <div class="bg-slate-700 p-4 text-white font-bold flex justify-between items-center">
                             <span><i class="fa-solid fa-magnifying-glass mr-2"></i> ตรวจสอบเอกสาร</span>
                         </div>
-                        <div class="p-6 flex flex-col items-center justify-center h-64 embed-placeholder border-0">
+                        <div class="p-6 flex flex-col items-center justify-center h-64 border-2 border-dashed border-slate-200 rounded-b-xl">
                             <i class="fa-brands fa-google-drive text-6xl text-slate-300 mb-4"></i>
-                            <p class="text-center text-sm text-slate-500 mb-4">เข้าถึงโฟลเดอร์เอกสารหลักฐาน<br>จากลิงก์ Google Drive</p>
-                            <a href="#" class="w-full bg-slate-600 hover:bg-slate-700 text-white text-center py-2 rounded shadow transition">
+                            <p class="text-center text-sm text-slate-500 mb-4">เข้าถึงโฟลเดอร์เอกสารหลักฐาน<br>จาก Google Drive</p>
+                            
+                            <!-- [จุดแก้ไขที่ 7] : ลิงก์ Google Drive Folder -->
+                            <a href="ใส่ลิงก์_GOOGLE_DRIVE_FOLDER_ตรวจสอบเอกสาร_ที่นี่" target="_blank" class="w-full bg-slate-600 hover:bg-slate-700 text-white text-center py-2 rounded shadow transition">
                                 <i class="fa-solid fa-folder-open mr-2"></i> เปิด Google Drive
                             </a>
+                        
                         </div>
                     </div>
                 </div>
 
-                <!-- 3.3, 3.4, 3.5 Secretary Inputs (Link Embeds) -->
+                <!-- 3.3, 3.4, 3.5 Secretary Inputs (EDIT HERE) -->
                 <div class="lg:col-span-2 space-y-6">
                     <h3 class="font-bold text-xl text-slate-800 border-b pb-2">สำหรับเลขานุการป้อนข้อมูล</h3>
                     
@@ -353,9 +378,12 @@
                                 <h4 class="font-bold text-lg text-slate-800">1. ระดับจังหวัด</h4>
                                 <p class="text-sm text-slate-500">สำหรับบันทึกคะแนนการประเมินรอบจังหวัด</p>
                             </div>
-                            <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded shadow hover:bg-purple-700 transition">
+                            
+                            <!-- [จุดแก้ไขที่ 8] : ลิงก์ฟอร์มบันทึกคะแนน ระดับจังหวัด -->
+                            <a href="https://script.google.com/macros/s/AKfycbwCrbKCuF9FpMPZbU5Waxl1VVAVcO7H0YxPxs8Ne2RBL9CuvfrncvdbGYsrB3J5Ko5d/exec" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded shadow hover:bg-purple-700 transition">
                                 <i class="fa-solid fa-link mr-1"></i> เข้าสู่ลิงก์
                             </a>
+                        
                         </div>
 
                         <!-- 3.4 Regional Link -->
@@ -364,9 +392,12 @@
                                 <h4 class="font-bold text-lg text-slate-800">2. ระดับภาค</h4>
                                 <p class="text-sm text-slate-500">สำหรับบันทึกคะแนนการประเมินรอบภาค</p>
                             </div>
-                            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded shadow hover:bg-indigo-700 transition">
+                            
+                            <!-- [จุดแก้ไขที่ 9] : ลิงก์ฟอร์มบันทึกคะแนน ระดับภาค -->
+                            <a href="https://script.google.com/macros/s/AKfycbwA0xZPKiumb6l9cJGJ3krTNvF1vDfrKluCo7gx081024ES2YphJrUzCMT1lV6wEomR/exec" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded shadow hover:bg-indigo-700 transition">
                                 <i class="fa-solid fa-link mr-1"></i> เข้าสู่ลิงก์
                             </a>
+                        
                         </div>
 
                         <!-- 3.5 National Link -->
@@ -375,14 +406,13 @@
                                 <h4 class="font-bold text-lg text-slate-800">3. ระดับชาติ</h4>
                                 <p class="text-sm text-slate-500">สำหรับบันทึกคะแนนการประเมินรอบชาติ</p>
                             </div>
-                            <a href="#" class="bg-orange-600 text-white px-4 py-2 rounded shadow hover:bg-orange-700 transition">
+                            
+                            <!-- [จุดแก้ไขที่ 10] : ลิงก์ฟอร์มบันทึกคะแนน ระดับชาติ -->
+                            <a href="ใส่ลิงก์_GOOGLE_FORM_ระดับชาติ_ที่นี่" target="_blank" class="bg-orange-600 text-white px-4 py-2 rounded shadow hover:bg-orange-700 transition">
                                 <i class="fa-solid fa-link mr-1"></i> เข้าสู่ลิงก์
                             </a>
+                        
                         </div>
-                    </div>
-                    
-                    <div class="mt-4 p-4 bg-yellow-50 rounded-lg text-xs text-yellow-700 border border-yellow-200">
-                        <i class="fa-solid fa-info-circle mr-1"></i> <strong>หมายเหตุ:</strong> ปุ่มด้านบนจะเชื่อมต่อไปยังลิงก์ภายนอกที่คุณกำหนด (เช่น Google Forms แยกตามระดับ)
                     </div>
                 </div>
             </div>
